@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATE</title>
+    <!-- <link rel="stylesheet" href=".style.css"> -->
+    <link rel="stylesheet" href="create.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="img/board_svg.svg" alt="imagem ilustrativa">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Adicionar Compromisso</h1>
+                    </div>                 
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="nome">Nome</label>
+                        <input id="nome" type="text" name="nome" placeholder="Nome do compromisso" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite o e-mail">
+                    </div>
+                    <div class="input-box">
+                        <label for="hora">Horário</label>
+                        <input id="hora" type="hour" name="hora" placeholder="Horário do compromisso" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="descricao">Descrição</label>
+                        <input id="descricao" type="text" name="descricao" placeholder="Descrição do compromisso">
+                    </div>
+                    <div class="input-box">
+                        <label for="duracao">Duração</label>
+                        <input id="duracao" type="text" name="duracao" placeholder="Duração do compromisso">
+                    </div>
+                    <div class="input-box">
+                        <label for="local">Local</label>
+                        <input id="local" type="text" name="local" placeholder="Local do compromisso">
+                    </div>
+                    <div class="input-box">
+                        <label for="data">Data</label>
+                        <input id="data" type="date" name="data" placeholder="Data do compromisso" required>
+                    </div>
+                    
+                </div>
+                <div class="salvar-button">
+                    <button><a href="#">Salvar</a></button>
+                </div>  
+            </form>
+        </div>
+    </div>
+</body>
+</html>
