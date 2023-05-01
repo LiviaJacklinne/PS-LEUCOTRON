@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box;   */
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eeeeee;
+}
+
+.container {
+    width: 90%;
+    height: 75vh;
+    display: flex;
+    box-shadow: 5px 5px 5px 5px rgba(85, 84, 84, 0.212);
+}
+
+.form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fde3a786;
+    padding: 1rem;
+}
+
+.form-image img {
+    width: 32rem;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    /* justify-content: center;
+    align-items: center;
+    flex-direction: column ; */
+    background-color: #ffff;
+    padding: 1rem;
+}
+
+.action {
+    display: flex;
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    background-color: #ffff;
+    padding: 0;
+}
+
+.form-header {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    font-size: 1rem;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #5451f1cc;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom:0.5rem;
+    padding: 0;
+    
+}
+
+.input-box input {
+    margin: 0.1rem;
+    padding: 0.8rem 1.1rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    box-shadow: 1.1px 1.1px 1.1px 2.1px rgb(0, 0, 0);
+}
+
+.input-box input:hover {
+    background-color: rgb(219, 217, 217);
+}
+
+.input-box input:focus-visible {
+    outline: 2px solid #5451f1cc;
+}
+
+.input-box label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.salvar-button button {
+    width: 100%;
+    margin-top: 0rem;
+    border: none;
+    background-color: #5451f1cc;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.salvar-button button:hover {
+    background-color: rgb(127,127,127);
+}
+
+.salvar-button a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #ffff;
+}
+
+@media screen and (max-width: 1330px) {
+    .form-image {
+        display: none;
+    }
+
+    .container {
+        width: 50%; 
+    }
+    .form {
+        width: 100%;
+    }
+    .form-header {
+        margin-bottom: 2rem; 
+    }
+    .salvar-button button {
+        margin-top: 2rem; 
+    }
+}
+@media screen and (max-width: 1079px) {
+    .container {
+        width: 90%;
+        height: auto;      
+    }
+
+    .form {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input-group {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    
+}
+
+@media screen and (max-width: 413px) {
+
+    .container {
+        width: 100%;
+        height: auto;      
+    }
+
+    .form {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .title {
+        font-size: 0.8rem;
+    }
+
+    .form-header {
+        margin-top: 1.2rem;
+    }
+
+    .input-group {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .input-box input {
+        margin: 0.2rem 0;
+        padding: 0.8rem 1rem;
+        border: none;
+        border-radius: 10px;
+        font-size: 0.8rem;
+        box-shadow: 1.1px 1.1px 1.1px 2.1px rgb(0, 0, 0);
+    }
+    .input-box {
+        display: flex;
+        flex-direction: column;
+        /* margin-bottom:1rem; */
+        padding: 0;
+        
+    }
+    .input-box label {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #000;
+    }
+    .salvar-button button {
+        width: 100%;
+        margin-top: 0;
+        border: none;
+        background-color: #5451f1cc;
+        padding: 0.8rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
